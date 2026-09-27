@@ -2,2449 +2,1460 @@
 <html lang="es-MX">
 <head>
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Cotiza Fácil</title>
+<title>Cotiza Fácil — Generador de cotizaciones gratis</title>
+
+<meta name="description" content="Cotiza Fácil es un generador de cotizaciones gratis para crear cotizaciones profesionales desde tu celular, calcular precios y descargar tus cotizaciones en PDF.">
+
+<meta name="keywords" content="cotizaciones gratis, generador de cotizaciones, hacer cotizaciones, cotización en PDF, cotizador gratis, crear cotización desde celular, cotizaciones para negocios">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://cberroteran400-spec.github.io/cotiza-facil/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cotiza Fácil — Generador de cotizaciones gratis">
+<meta property="og:description" content="Crea cotizaciones profesionales desde tu celular y descárgalas en PDF gratis.">
+<meta property="og:url" content="https://cberroteran400-spec.github.io/cotiza-facil/">
+<meta property="og:site_name" content="Cotiza Fácil">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cotiza Fácil — Generador de cotizaciones gratis">
+<meta name="twitter:description" content="Crea cotizaciones profesionales desde tu celular y descárgalas en PDF gratis.">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"Cotiza Fácil",
+  "url":"https://cberroteran400-spec.github.io/cotiza-facil/",
+  "description":"Generador de cotizaciones gratis para crear cotizaciones profesionales desde el celular y descargarlas en PDF.",
+  "applicationCategory":"BusinessApplication",
+  "operatingSystem":"Android, iOS, Windows, macOS, Linux",
+  "offers":{
+    "@type":"Offer",
+    "price":"0",
+    "priceCurrency":"MXN"
+  }
+}
+</script>
 
 <style>
-
-*{
-    box-sizing:border-box;
-}
+*{box-sizing:border-box}
 
 body{
-    margin:0;
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f1f5f9;
-    color:#1e293b;
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:#f1f5f9;
+color:#1e293b
 }
 
 header{
-    background:#2563eb;
-    color:white;
-    padding:25px 18px;
-    text-align:center;
+background:#2563eb;
+color:white;
+padding:25px 18px;
+text-align:center
 }
 
-header h1{
-    margin:0;
-    font-size:30px;
-}
+header h1{margin:0;font-size:30px}
+header p{margin:7px 0 0}
 
-header p{
-    margin:7px 0 0;
-}
-
-main{
-    max-width:750px;
-    margin:auto;
-    padding:18px;
-}
+main{max-width:750px;margin:auto;padding:18px}
 
 .card{
-    background:white;
-    border-radius:16px;
-    padding:20px;
-    margin-bottom:18px;
-    box-shadow:0 4px 15px rgba(0,0,0,.07);
+background:white;
+border-radius:16px;
+padding:20px;
+margin-bottom:18px;
+box-shadow:0 4px 15px rgba(0,0,0,.07)
 }
 
-h2{
-    margin-top:0;
-}
-
-h3{
-    color:#334155;
-    margin-top:25px;
-}
+h2{margin-top:0}
+h3{color:#334155;margin-top:25px}
 
 label{
-    display:block;
-    margin-top:14px;
-    margin-bottom:6px;
-    font-weight:bold;
+display:block;
+margin-top:14px;
+margin-bottom:6px;
+font-weight:bold
 }
 
-input,
-textarea,
-select{
-    width:100%;
-    padding:12px;
-    border:1px solid #cbd5e1;
-    border-radius:10px;
-    font-size:16px;
-    background:white;
+input,textarea,select{
+width:100%;
+padding:12px;
+border:1px solid #cbd5e1;
+border-radius:10px;
+font-size:16px;
+background:white
 }
 
 textarea{
-    min-height:100px;
-    resize:vertical;
+min-height:100px;
+resize:vertical
 }
 
-input:focus,
-textarea:focus,
-select:focus{
-    outline:none;
-    border-color:#2563eb;
+input:focus,textarea:focus,select:focus{
+outline:none;
+border-color:#2563eb
 }
 
 .grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px
 }
 
 .grid3{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    gap:10px;
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:10px
 }
 
 button{
-    width:100%;
-    border:0;
-    border-radius:10px;
-    padding:14px;
-    margin-top:12px;
-    font-size:15px;
-    font-weight:bold;
+width:100%;
+border:0;
+border-radius:10px;
+padding:14px;
+margin-top:12px;
+font-size:15px;
+font-weight:bold
 }
 
-.primary{
-    background:#2563eb;
-    color:white;
-}
-
-.secondary{
-    background:#e2e8f0;
-    color:#1e293b;
-}
-
-.danger{
-    background:#fee2e2;
-    color:#b91c1c;
-}
-
-.pdf{
-    background:#dc2626;
-    color:white;
-}
-
-.green{
-    background:#16a34a;
-    color:white;
-}
-
-.dark{
-    background:#475569;
-    color:white;
-}
+.primary{background:#2563eb;color:white}
+.secondary{background:#e2e8f0;color:#1e293b}
+.danger{background:#fee2e2;color:#b91c1c}
+.pdf{background:#dc2626;color:white}
+.green{background:#16a34a;color:white}
+.dark{background:#475569;color:white}
 
 .logo-box{
-    border:2px dashed #cbd5e1;
-    border-radius:12px;
-    padding:15px;
-    text-align:center;
-    margin-top:10px;
+border:2px dashed #cbd5e1;
+border-radius:12px;
+padding:15px;
+text-align:center;
+margin-top:10px
 }
 
 .logo-preview{
-    max-width:180px;
-    max-height:100px;
-    margin:10px auto;
-    display:none;
+max-width:180px;
+max-height:100px;
+margin:10px auto;
+display:none
 }
 
 .item{
-    background:#f8fafc;
-    border:1px solid #dbe3ee;
-    border-radius:12px;
-    padding:15px;
-    margin-bottom:14px;
+background:#f8fafc;
+border:1px solid #dbe3ee;
+border-radius:12px;
+padding:15px;
+margin-bottom:14px
 }
 
 .item-head{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+display:flex;
+justify-content:space-between;
+align-items:center
 }
 
-.item-head strong{
-    color:#334155;
-}
+.item-head strong{color:#334155}
 
 .remove{
-    width:auto;
-    margin:0;
-    padding:7px 10px;
-    font-size:12px;
+width:auto;
+margin:0;
+padding:7px 10px;
+font-size:12px
 }
 
 .check{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    font-weight:normal;
+display:flex;
+align-items:center;
+gap:8px;
+font-weight:normal
 }
 
-.check input{
-    width:auto;
-}
+.check input{width:auto}
 
-.result{
-    display:none;
-}
+.result{display:none}
 
 .quote-header{
-    display:flex;
-    justify-content:space-between;
-    gap:20px;
-    border-bottom:2px solid #2563eb;
-    padding-bottom:16px;
+display:flex;
+justify-content:space-between;
+gap:20px;
+border-bottom:2px solid #2563eb;
+padding-bottom:16px
 }
 
 .result-logo{
-    max-width:150px;
-    max-height:80px;
-    display:none;
-    margin-bottom:8px;
+max-width:150px;
+max-height:80px;
+display:none;
+margin-bottom:8px
 }
 
 .business-title{
-    color:#2563eb;
-    margin-bottom:5px;
+color:#2563eb;
+margin-bottom:5px
 }
 
 .quote-info{
-    text-align:right;
-    font-size:14px;
+text-align:right;
+font-size:14px
 }
 
-.quote-info p{
-    margin:4px 0;
-}
+.quote-info p{margin:4px 0}
 
 .client-box{
-    background:#f8fafc;
-    padding:15px;
-    border-radius:10px;
-    margin:18px 0;
+background:#f8fafc;
+padding:15px;
+border-radius:10px;
+margin:18px 0
 }
 
-.client-box p{
-    margin:5px 0;
-}
+.client-box p{margin:5px 0}
 
-.table-wrap{
-    overflow-x:auto;
-}
+.table-wrap{overflow-x:auto}
 
 .items-table{
-    width:100%;
-    border-collapse:collapse;
-    min-width:500px;
+width:100%;
+border-collapse:collapse;
+min-width:500px
 }
 
 .items-table th{
-    background:#2563eb;
-    color:white;
-    padding:10px 7px;
-    text-align:left;
-    font-size:13px;
+background:#2563eb;
+color:white;
+padding:10px 7px;
+text-align:left;
+font-size:13px
 }
 
 .items-table td{
-    padding:10px 7px;
-    border-bottom:1px solid #e2e8f0;
-    font-size:14px;
+padding:10px 7px;
+border-bottom:1px solid #e2e8f0;
+font-size:14px
 }
 
 .items-table th:nth-child(2),
-.items-table td:nth-child(2){
-    text-align:center;
-}
+.items-table td:nth-child(2){text-align:center}
 
 .items-table th:nth-child(3),
 .items-table th:nth-child(4),
 .items-table td:nth-child(3),
-.items-table td:nth-child(4){
-    text-align:right;
-}
+.items-table td:nth-child(4){text-align:right}
 
 .summary{
-    max-width:350px;
-    margin:20px 0 0 auto;
+max-width:350px;
+margin:20px 0 0 auto
 }
 
 .summary-row{
-    display:flex;
-    justify-content:space-between;
-    padding:7px 0;
+display:flex;
+justify-content:space-between;
+padding:7px 0
 }
 
 .total-box{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-top:10px;
-    padding:16px;
-    background:#eff6ff;
-    border:2px solid #2563eb;
-    border-radius:12px;
-    color:#1d4ed8;
-    font-size:22px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-top:10px;
+padding:16px;
+background:#eff6ff;
+border:2px solid #2563eb;
+border-radius:12px;
+color:#1d4ed8;
+font-size:22px
 }
 
 .balance-box{
-    display:flex;
-    justify-content:space-between;
-    padding:12px;
-    margin-top:8px;
-    border-radius:10px;
-    background:#f8fafc;
-    font-weight:bold;
+display:flex;
+justify-content:space-between;
+padding:12px;
+margin-top:8px;
+border-radius:10px;
+background:#f8fafc;
+font-weight:bold
 }
 
 .notes{
-    margin-top:25px;
-    padding-top:18px;
-    border-top:1px solid #e2e8f0;
+margin-top:25px;
+padding-top:18px;
+border-top:1px solid #e2e8f0
 }
 
 .notes-text{
-    white-space:pre-wrap;
-    line-height:1.5;
-    color:#475569;
+white-space:pre-wrap;
+line-height:1.5;
+color:#475569
 }
 
 .thanks{
-    text-align:center;
-    margin-top:30px;
-    padding-top:18px;
-    border-top:1px solid #e2e8f0;
-    color:#64748b;
+text-align:center;
+margin-top:30px;
+padding-top:18px;
+border-top:1px solid #e2e8f0;
+color:#64748b
 }
 
-.history-card{
-    display:none;
-}
+.history-card{display:none}
 
 .history-item{
-    border:1px solid #dbe3ee;
-    border-radius:12px;
-    padding:14px;
-    margin-bottom:10px;
+border:1px solid #dbe3ee;
+border-radius:12px;
+padding:14px;
+margin-bottom:10px
 }
 
 .history-item strong{
-    display:block;
-    margin-bottom:5px;
+display:block;
+margin-bottom:5px
 }
 
 .history-buttons{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:8px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:8px
 }
 
 .history-buttons button{
-    margin-top:8px;
-    padding:10px;
-    font-size:13px;
+margin-top:8px;
+padding:10px;
+font-size:13px
 }
 
 .empty{
-    text-align:center;
-    color:#64748b;
-    padding:15px;
+text-align:center;
+color:#64748b;
+padding:15px
 }
 
 footer{
-    text-align:center;
-    padding:25px;
-    color:#64748b;
-    font-size:13px;
+text-align:center;
+padding:25px;
+color:#64748b;
+font-size:13px
 }
 
+/* SEO */
+.seo-intro{
+line-height:1.6;
+color:#475569
+}
+
+.seo-intro h2{
+color:#1e293b;
+margin-top:0
+}
+
+.seo-intro strong{color:#1e293b}
 
 /* PDF */
-
 @media print{
+@page{
+size:A4;
+margin:12mm
+}
 
-    @page{
-        size:A4;
-        margin:12mm;
-    }
+body{background:white}
 
-    body{
-        background:white;
-    }
+header{
+background:white;
+color:#111827;
+padding:0 0 12px;
+border-bottom:2px solid #2563eb
+}
 
-    header{
-        background:white;
-        color:#111827;
-        padding:0 0 12px;
-        border-bottom:2px solid #2563eb;
-    }
+header h1{color:#2563eb}
 
-    header h1{
-        color:#2563eb;
-    }
+main{
+max-width:100%;
+padding:0
+}
 
-    main{
-        max-width:100%;
-        padding:0;
-    }
+#formCard,
+#historyCard,
+#seoCard,
+.no-print,
+footer{
+display:none!important
+}
 
-    #formCard,
-    #historyCard,
-    .no-print,
-    footer{
-        display:none!important;
-    }
+.result{
+display:block!important;
+box-shadow:none;
+padding:0;
+margin:0;
+border-radius:0
+}
 
-    .result{
-        display:block!important;
-        box-shadow:none;
-        padding:0;
-        margin:0;
-        border-radius:0;
-    }
+.pdf{display:none!important}
+.new-quote{display:none!important}
 
-    .pdf{
-        display:none!important;
-    }
+.quote-header{margin-top:15px}
 
-    .new-quote{
-        display:none!important;
-    }
+.client-box{
+background:#f8fafc!important;
+-webkit-print-color-adjust:exact;
+print-color-adjust:exact
+}
 
-    .quote-header{
-        margin-top:15px;
-    }
+.items-table th{
+background:#2563eb!important;
+color:white!important;
+-webkit-print-color-adjust:exact;
+print-color-adjust:exact
+}
 
-    .client-box{
-        background:#f8fafc!important;
-        -webkit-print-color-adjust:exact;
-        print-color-adjust:exact;
-    }
-
-    .items-table th{
-        background:#2563eb!important;
-        color:white!important;
-        -webkit-print-color-adjust:exact;
-        print-color-adjust:exact;
-    }
-
-    .total-box{
-        background:#eff6ff!important;
-        -webkit-print-color-adjust:exact;
-        print-color-adjust:exact;
-    }
-
+.total-box{
+background:#eff6ff!important;
+-webkit-print-color-adjust:exact;
+print-color-adjust:exact
+}
 }
 
 @media(max-width:550px){
+.grid,.grid3{grid-template-columns:1fr}
 
-    .grid,
-    .grid3{
-        grid-template-columns:1fr;
-    }
+.quote-header{flex-direction:column}
 
-    .quote-header{
-        flex-direction:column;
-    }
+.quote-info{text-align:left}
 
-    .quote-info{
-        text-align:left;
-    }
+.summary{max-width:none}
 
-    .summary{
-        max-width:none;
-    }
-
-    .total-box{
-        font-size:20px;
-    }
-
+.total-box{font-size:20px}
 }
-
 </style>
 </head>
-
 
 <body>
 
 <header>
-
-    <h1>✓ Cotiza Fácil</h1>
-
-    <p>
-        Cotizaciones profesionales desde tu celular
-    </p>
-
+<h1>✓ Cotiza Fácil</h1>
+<p>Generador de cotizaciones profesionales gratis desde tu celular</p>
 </header>
-
 
 <main>
 
-
-<!-- FORMULARIO -->
-
 <section class="card" id="formCard">
 
-    <h2>Datos del negocio</h2>
+<h2>Datos del negocio</h2>
 
-    <label>Nombre del negocio</label>
+<label>Nombre del negocio</label>
+<input id="businessName" placeholder="Ej. Pinturas López">
 
-    <input
-        id="businessName"
-        placeholder="Ej. Pinturas López"
-    >
+<label>Teléfono</label>
+<input id="businessPhone" type="tel" placeholder="Ej. 5512345678">
 
-    <label>Teléfono</label>
+<label>Correo electrónico</label>
+<input id="businessEmail" type="email" placeholder="Ej. contacto@negocio.com">
 
-    <input
-        id="businessPhone"
-        type="tel"
-        placeholder="Ej. 5512345678"
-    >
+<label>Dirección del negocio</label>
+<input id="businessAddress" placeholder="Ej. Av. Principal #123">
 
-    <label>Correo electrónico</label>
+<label>Logo del negocio</label>
 
-    <input
-        id="businessEmail"
-        type="email"
-        placeholder="Ej. contacto@negocio.com"
-    >
+<div class="logo-box">
 
-    <label>Dirección del negocio</label>
+<input id="logoInput" type="file" accept="image/*">
 
-    <input
-        id="businessAddress"
-        placeholder="Ej. Av. Principal #123"
-    >
+<img id="logoPreview" class="logo-preview">
 
+<button type="button" class="danger" onclick="removeLogo()">
+Quitar logo
+</button>
 
-    <label>Logo del negocio</label>
+</div>
 
-    <div class="logo-box">
+<h2 style="margin-top:30px">Datos del cliente</h2>
 
-        <input
-            id="logoInput"
-            type="file"
-            accept="image/*"
-        >
+<label>Nombre del cliente</label>
+<input id="clientName" placeholder="Ej. Juan Pérez">
 
-        <img
-            id="logoPreview"
-            class="logo-preview"
-        >
+<label>Teléfono del cliente</label>
+<input id="clientPhone" type="tel" placeholder="Ej. 5512345678">
 
-        <button
-            type="button"
-            class="danger"
-            onclick="removeLogo()"
-        >
-            Quitar logo
-        </button>
+<label>Dirección del cliente</label>
+<input id="clientAddress" placeholder="Ej. Calle Principal #45">
 
-    </div>
+<h2 style="margin-top:30px">Datos de la cotización</h2>
 
+<div class="grid">
 
-    <h2 style="margin-top:30px;">
-        Datos del cliente
-    </h2>
+<div>
+<label>Vigencia (días)</label>
+<input id="validity" type="number" value="15" min="1">
+</div>
 
+<div>
+<label>Moneda</label>
 
-    <label>Nombre del cliente</label>
+<select id="currency">
+<option value="MXN">MXN - Peso mexicano</option>
+<option value="USD">USD - Dólar</option>
+</select>
 
-    <input
-        id="clientName"
-        placeholder="Ej. Juan Pérez"
-    >
+</div>
 
+</div>
 
-    <label>Teléfono del cliente</label>
+<label>Servicio</label>
+<input id="service" placeholder="Ej. Pintura de casa">
 
-    <input
-        id="clientPhone"
-        type="tel"
-        placeholder="Ej. 5512345678"
-    >
+<h2 style="margin-top:30px">Conceptos</h2>
 
+<div id="items">
 
-    <label>Dirección del cliente</label>
+<div class="item">
 
-    <input
-        id="clientAddress"
-        placeholder="Ej. Calle Principal #45"
-    >
+<div class="item-head">
+<strong>Concepto 1</strong>
+</div>
 
+<label>Descripción</label>
+<input class="item-name" placeholder="Ej. Pintura blanca">
 
-    <h2 style="margin-top:30px;">
-        Datos de la cotización
-    </h2>
+<div class="grid3">
 
+<div>
+<label>Cantidad</label>
+<input class="item-quantity" type="number" value="1" min="0" step="0.01">
+</div>
 
-    <div class="grid">
+<div>
+<label>Unidad</label>
+<input class="item-unit" value="pieza" placeholder="pieza">
+</div>
 
-        <div>
+<div>
+<label>Precio unitario</label>
+<input class="item-price" type="number" value="0" min="0" step="0.01">
+</div>
 
-            <label>Vigencia (días)</label>
+</div>
+</div>
+</div>
 
-            <input
-                id="validity"
-                type="number"
-                value="15"
-                min="1"
-            >
+<button type="button" class="secondary" onclick="addItem()">
++ AGREGAR CONCEPTO
+</button>
 
-        </div>
+<h2 style="margin-top:30px">Costos y descuentos</h2>
 
+<label>Mano de obra</label>
+<input id="labor" type="number" value="0" min="0" step="0.01">
 
-        <div>
+<label>Descuento (%)</label>
+<input id="discount" type="number" value="0" min="0" step="0.01">
 
-            <label>Moneda</label>
+<label>Ganancia (%)</label>
+<input id="profit" type="number" value="20" min="0" step="0.01">
 
-            <select id="currency">
+<label class="check">
+<input id="includeIva" type="checkbox">
+Agregar IVA (16%)
+</label>
 
-                <option value="MXN">
-                    MXN - Peso mexicano
-                </option>
+<label>Anticipo</label>
+<input id="deposit" type="number" value="0" min="0" step="0.01">
 
-                <option value="USD">
-                    USD - Dólar
-                </option>
+<label>Notas y condiciones</label>
 
-            </select>
+<textarea id="notes" placeholder="Ej. Vigencia de la cotización: 15 días. Anticipo del 50% para iniciar el trabajo."></textarea>
 
-        </div>
-
-    </div>
-
-
-    <label>Servicio</label>
-
-    <input
-        id="service"
-        placeholder="Ej. Pintura de casa"
-    >
-
-
-    <h2 style="margin-top:30px;">
-        Conceptos
-    </h2>
-
-
-    <div id="items">
-
-        <div class="item">
-
-            <div class="item-head">
-
-                <strong>
-                    Concepto 1
-                </strong>
-
-            </div>
-
-
-            <label>Descripción</label>
-
-            <input
-                class="item-name"
-                placeholder="Ej. Pintura blanca"
-            >
-
-
-            <div class="grid3">
-
-                <div>
-
-                    <label>Cantidad</label>
-
-                    <input
-                        class="item-quantity"
-                        type="number"
-                        value="1"
-                        min="0"
-                        step="0.01"
-                    >
-
-                </div>
-
-
-                <div>
-
-                    <label>Unidad</label>
-
-                    <input
-                        class="item-unit"
-                        value="pieza"
-                        placeholder="pieza"
-                    >
-
-                </div>
-
-
-                <div>
-
-                    <label>Precio unitario</label>
-
-                    <input
-                        class="item-price"
-                        type="number"
-                        value="0"
-                        min="0"
-                        step="0.01"
-                    >
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <button
-        type="button"
-        class="secondary"
-        onclick="addItem()"
-    >
-        + AGREGAR CONCEPTO
-    </button>
-
-
-    <h2 style="margin-top:30px;">
-        Costos y descuentos
-    </h2>
-
-
-    <label>Mano de obra</label>
-
-    <input
-        id="labor"
-        type="number"
-        value="0"
-        min="0"
-        step="0.01"
-    >
-
-
-    <label>Descuento (%)</label>
-
-    <input
-        id="discount"
-        type="number"
-        value="0"
-        min="0"
-        step="0.01"
-    >
-
-
-    <label>Ganancia (%)</label>
-
-    <input
-        id="profit"
-        type="number"
-        value="20"
-        min="0"
-        step="0.01"
-    >
-
-
-    <label class="check">
-
-        <input
-            id="includeIva"
-            type="checkbox"
-        >
-
-        Agregar IVA (16%)
-
-    </label>
-
-
-    <label>Anticipo</label>
-
-    <input
-        id="deposit"
-        type="number"
-        value="0"
-        min="0"
-        step="0.01"
-    >
-
-
-    <label>Notas y condiciones</label>
-
-    <textarea
-        id="notes"
-        placeholder="Ej. Vigencia de la cotización: 15 días. Anticipo del 50% para iniciar el trabajo."
-    ></textarea>
-
-
-    <button
-        type="button"
-        class="primary"
-        onclick="calculateQuote()"
-    >
-        ✓ CALCULAR COTIZACIÓN
-    </button>
+<button type="button" class="primary" onclick="calculateQuote()">
+✓ CALCULAR COTIZACIÓN
+</button>
 
 </section>
 
+<!-- CONTENIDO QUE AYUDA A LOS BUSCADORES -->
 
+<section class="card seo-intro" id="seoCard">
+
+<h2>Generador de cotizaciones gratis</h2>
+
+<p>
+<strong>Cotiza Fácil</strong> es una herramienta gratuita para crear
+<strong>cotizaciones profesionales</strong> desde el celular o computadora.
+Puedes agregar productos o servicios, cantidades, precios, mano de obra,
+descuentos, ganancia e IVA.
+</p>
+
+<p>
+Cuando termines tu cotización puedes descargarla en <strong>PDF</strong>,
+guardar tus cotizaciones en el historial y compartir el resumen con tu cliente.
+</p>
+
+<p>
+Es útil para trabajadores independientes, pequeños negocios,
+profesionistas y personas que necesitan <strong>hacer una cotización rápida</strong>
+sin instalar programas complicados.
+</p>
+
+</section>
 
 <!-- HISTORIAL -->
 
-<section
-    class="card history-card"
-    id="historyCard"
->
+<section class="card history-card" id="historyCard">
 
-    <h2>
-        Historial de cotizaciones
-    </h2>
+<h2>Historial de cotizaciones</h2>
 
-    <div id="historyList"></div>
+<div id="historyList"></div>
 
 </section>
-
-
 
 <!-- RESULTADO -->
 
-<section
-    class="card result"
-    id="result"
->
+<section class="card result" id="result">
 
+<div class="quote-header">
 
-    <div class="quote-header">
+<div>
 
+<img id="resultLogo" class="result-logo">
 
-        <div>
+<h2 class="business-title" id="resultBusiness">
+Mi negocio
+</h2>
 
-            <img
-                id="resultLogo"
-                class="result-logo"
-            >
+<div>
+<strong>Teléfono:</strong>
+<span id="resultPhone"></span>
+</div>
 
-            <h2
-                class="business-title"
-                id="resultBusiness"
-            >
-                Mi negocio
-            </h2>
+<div>
+<strong>Correo:</strong>
+<span id="resultEmail"></span>
+</div>
 
-            <div>
-                <strong>Teléfono:</strong>
-                <span id="resultPhone"></span>
-            </div>
+<div>
+<strong>Dirección:</strong>
+<span id="resultBusinessAddress"></span>
+</div>
 
-            <div>
-                <strong>Correo:</strong>
-                <span id="resultEmail"></span>
-            </div>
+</div>
 
-            <div>
-                <strong>Dirección:</strong>
-                <span id="resultBusinessAddress"></span>
-            </div>
+<div class="quote-info">
 
-        </div>
+<p><strong>COTIZACIÓN</strong></p>
 
+<p>
+Folio:
+<span id="resultFolio"></span>
+</p>
 
-        <div class="quote-info">
+<p>
+Fecha:
+<span id="resultDate"></span>
+</p>
 
-            <p>
-                <strong>COTIZACIÓN</strong>
-            </p>
+<p>
+Vigencia:
+<span id="resultValidity"></span>
+</p>
 
-            <p>
-                Folio:
-                <span id="resultFolio"></span>
-            </p>
+</div>
 
-            <p>
-                Fecha:
-                <span id="resultDate"></span>
-            </p>
+</div>
 
-            <p>
-                Vigencia:
-                <span id="resultValidity"></span>
-            </p>
+<div class="client-box">
 
-        </div>
+<p>
+<strong>Cliente:</strong>
+<span id="resultClient"></span>
+</p>
 
-    </div>
+<p>
+<strong>Teléfono:</strong>
+<span id="resultClientPhone"></span>
+</p>
 
+<p>
+<strong>Dirección:</strong>
+<span id="resultClientAddress"></span>
+</p>
 
+<p>
+<strong>Servicio:</strong>
+<span id="resultService"></span>
+</p>
 
-    <div class="client-box">
+</div>
 
-        <p>
-            <strong>Cliente:</strong>
-            <span id="resultClient"></span>
-        </p>
+<h3>Detalle de la cotización</h3>
 
-        <p>
-            <strong>Teléfono:</strong>
-            <span id="resultClientPhone"></span>
-        </p>
+<div class="table-wrap">
 
-        <p>
-            <strong>Dirección:</strong>
-            <span id="resultClientAddress"></span>
-        </p>
+<table class="items-table">
 
-        <p>
-            <strong>Servicio:</strong>
-            <span id="resultService"></span>
-        </p>
+<thead>
+<tr>
+<th>Concepto</th>
+<th>Cant.</th>
+<th>Precio</th>
+<th>Importe</th>
+</tr>
+</thead>
 
-    </div>
+<tbody id="resultItems"></tbody>
 
+</table>
 
+</div>
 
-    <h3>
-        Detalle de la cotización
-    </h3>
+<div class="summary">
 
+<div class="summary-row">
+<span>Materiales:</span>
+<strong id="resultMaterials">$0.00</strong>
+</div>
 
-    <div class="table-wrap">
+<div class="summary-row">
+<span>Mano de obra:</span>
+<strong id="resultLabor">$0.00</strong>
+</div>
 
-        <table class="items-table">
+<div class="summary-row">
+<span>Descuento:</span>
+<strong id="resultDiscount">$0.00</strong>
+</div>
 
-            <thead>
+<div class="summary-row">
+<span>Ganancia:</span>
+<strong id="resultProfit">$0.00</strong>
+</div>
 
-                <tr>
+<div class="summary-row">
+<span>IVA:</span>
+<strong id="resultIva">$0.00</strong>
+</div>
 
-                    <th>Concepto</th>
+<div class="total-box">
+<strong>TOTAL</strong>
+<strong id="resultTotal">$0.00</strong>
+</div>
 
-                    <th>Cant.</th>
+<div class="balance-box">
+<span>Anticipo:</span>
+<span id="resultDeposit">$0.00</span>
+</div>
 
-                    <th>Precio</th>
+<div class="balance-box">
+<span>Saldo pendiente:</span>
+<span id="resultBalance">$0.00</span>
+</div>
 
-                    <th>Importe</th>
+</div>
 
-                </tr>
+<div class="notes">
 
-            </thead>
+<h3>Notas y condiciones</h3>
 
-            <tbody id="resultItems"></tbody>
+<div id="resultNotes" class="notes-text">
+Sin notas.
+</div>
 
-        </table>
+</div>
 
-    </div>
+<div class="thanks">
 
+<strong>Gracias por su preferencia.</strong>
 
+<br><br>
 
-    <div class="summary">
+Cotización generada con Cotiza Fácil
 
+</div>
 
-        <div class="summary-row">
+<button type="button" class="pdf no-print" onclick="downloadPDF()">
+📄 DESCARGAR PDF
+</button>
 
-            <span>
-                Materiales:
-            </span>
+<button type="button" class="green no-print" onclick="shareText()">
+📋 COPIAR / COMPARTIR RESUMEN
+</button>
 
-            <strong id="resultMaterials">
-                $0.00
-            </strong>
-
-        </div>
-
-
-        <div class="summary-row">
-
-            <span>
-                Mano de obra:
-            </span>
-
-            <strong id="resultLabor">
-                $0.00
-            </strong>
-
-        </div>
-
-
-        <div class="summary-row">
-
-            <span>
-                Descuento:
-            </span>
-
-            <strong id="resultDiscount">
-                $0.00
-            </strong>
-
-        </div>
-
-
-        <div class="summary-row">
-
-            <span>
-                Ganancia:
-            </span>
-
-            <strong id="resultProfit">
-                $0.00
-            </strong>
-
-        </div>
-
-
-        <div class="summary-row">
-
-            <span>
-                IVA:
-            </span>
-
-            <strong id="resultIva">
-                $0.00
-            </strong>
-
-        </div>
-
-
-        <div class="total-box">
-
-            <strong>TOTAL</strong>
-
-            <strong id="resultTotal">
-                $0.00
-            </strong>
-
-        </div>
-
-
-        <div class="balance-box">
-
-            <span>Anticipo:</span>
-
-            <span id="resultDeposit">
-                $0.00
-            </span>
-
-        </div>
-
-
-        <div class="balance-box">
-
-            <span>Saldo pendiente:</span>
-
-            <span id="resultBalance">
-                $0.00
-            </span>
-
-        </div>
-
-    </div>
-
-
-
-    <div class="notes">
-
-        <h3>
-            Notas y condiciones
-        </h3>
-
-        <div
-            id="resultNotes"
-            class="notes-text"
-        >
-            Sin notas.
-        </div>
-
-    </div>
-
-
-
-    <div class="thanks">
-
-        <strong>
-            Gracias por su preferencia.
-        </strong>
-
-        <br><br>
-
-        Cotización generada con Cotiza Fácil
-
-    </div>
-
-
-
-    <button
-        type="button"
-        class="pdf no-print"
-        onclick="downloadPDF()"
-    >
-        📄 DESCARGAR PDF
-    </button>
-
-
-    <button
-        type="button"
-        class="green no-print"
-        onclick="shareText()"
-    >
-        📋 COPIAR RESUMEN
-    </button>
-
-
-    <button
-        type="button"
-        class="dark new-quote no-print"
-        onclick="newQuote()"
-    >
-        ↻ NUEVA COTIZACIÓN
-    </button>
-
+<button type="button" class="dark new-quote no-print" onclick="newQuote()">
+↻ NUEVA COTIZACIÓN
+</button>
 
 </section>
 
-
 </main>
 
-
 <footer>
-    © 2026 Cotiza Fácil
+© 2026 Cotiza Fácil · Generador de cotizaciones gratis
 </footer>
-
-
 
 <script>
 
+let itemNumber=1;
+let currentQuote=null;
+let logoData="";
 
-let itemNumber = 1;
+document.getElementById("logoInput").addEventListener("change",function(event){
 
-let currentQuote = null;
+const file=event.target.files[0];
 
-let logoData = "";
+if(!file)return;
 
+const reader=new FileReader();
 
+reader.onload=function(e){
 
-/* LOGO */
+logoData=e.target.result;
 
-document
-    .getElementById("logoInput")
-    .addEventListener(
-        "change",
-        function(event){
+const preview=document.getElementById("logoPreview");
 
-            const file =
-                event.target.files[0];
+preview.src=logoData;
+preview.style.display="block";
 
-            if(!file){
-                return;
-            }
+saveBusinessData();
 
-            const reader =
-                new FileReader();
+};
 
-            reader.onload =
-                function(e){
+reader.readAsDataURL(file);
 
-                    logoData =
-                        e.target.result;
-
-                    const preview =
-                        document.getElementById(
-                            "logoPreview"
-                        );
-
-                    preview.src =
-                        logoData;
-
-                    preview.style.display =
-                        "block";
-
-                    saveBusinessData();
-
-                };
-
-            reader.readAsDataURL(file);
-
-        }
-    );
-
-
+});
 
 function removeLogo(){
 
-    logoData = "";
+logoData="";
 
-    document.getElementById(
-        "logoInput"
-    ).value = "";
+document.getElementById("logoInput").value="";
 
-    document.getElementById(
-        "logoPreview"
-    ).style.display = "none";
+document.getElementById("logoPreview").style.display="none";
 
-    saveBusinessData();
+saveBusinessData();
 
 }
-
-
-
-/* FORMULARIO */
 
 function addItem(){
 
-    itemNumber++;
+itemNumber++;
 
-    const items =
-        document.getElementById(
-            "items"
-        );
+const items=document.getElementById("items");
 
-    const div =
-        document.createElement(
-            "div"
-        );
+const div=document.createElement("div");
 
-    div.className =
-        "item";
+div.className="item";
 
-    div.innerHTML = `
+div.innerHTML=`
 
-        <div class="item-head">
+<div class="item-head">
 
-            <strong>
-                Concepto ${itemNumber}
-            </strong>
+<strong>Concepto ${itemNumber}</strong>
 
-            <button
-                type="button"
-                class="danger remove"
-                onclick="removeItem(this)"
-            >
-                Eliminar
-            </button>
+<button type="button" class="danger remove" onclick="removeItem(this)">
+Eliminar
+</button>
 
-        </div>
+</div>
 
-        <label>Descripción</label>
+<label>Descripción</label>
 
-        <input
-            class="item-name"
-            placeholder="Ej. Cemento"
-        >
+<input class="item-name" placeholder="Ej. Cemento">
 
-        <div class="grid3">
+<div class="grid3">
 
-            <div>
+<div>
+<label>Cantidad</label>
+<input class="item-quantity" type="number" value="1" min="0" step="0.01">
+</div>
 
-                <label>Cantidad</label>
+<div>
+<label>Unidad</label>
+<input class="item-unit" value="pieza" placeholder="pieza">
+</div>
 
-                <input
-                    class="item-quantity"
-                    type="number"
-                    value="1"
-                    min="0"
-                    step="0.01"
-                >
+<div>
+<label>Precio unitario</label>
+<input class="item-price" type="number" value="0" min="0" step="0.01">
+</div>
 
-            </div>
+</div>
+`;
 
-            <div>
-
-                <label>Unidad</label>
-
-                <input
-                    class="item-unit"
-                    value="pieza"
-                    placeholder="pieza"
-                >
-
-            </div>
-
-            <div>
-
-                <label>Precio unitario</label>
-
-                <input
-                    class="item-price"
-                    type="number"
-                    value="0"
-                    min="0"
-                    step="0.01"
-                >
-
-            </div>
-
-        </div>
-
-    `;
-
-    items.appendChild(div);
+items.appendChild(div);
 
 }
-
-
 
 function removeItem(button){
 
-    const item =
-        button.closest(".item");
+const item=button.closest(".item");
 
-    item.remove();
-
-}
-
-
-
-/* MONEDA */
-
-function currencySymbol(){
-
-    const currency =
-        document.getElementById(
-            "currency"
-        ).value;
-
-    if(currency === "USD"){
-        return "USD";
-    }
-
-    return "MXN";
+if(item)item.remove();
 
 }
 
+function currencySymbol(currency=null){
 
+const selected=currency ||
+document.getElementById("currency").value;
 
-function money(value){
-
-    return value.toLocaleString(
-        "es-MX",
-        {
-            style:"currency",
-            currency:currencySymbol()
-        }
-    );
+return selected==="USD"?"USD":"MXN";
 
 }
 
+function money(value,currency=null){
 
+return Number(value||0).toLocaleString("es-MX",{
+style:"currency",
+currency:currencySymbol(currency)
+});
 
-/* FOLIO */
+}
 
 function createFolio(){
 
-    const now =
-        new Date();
+const now=new Date();
 
-    const year =
-        now.getFullYear();
+const year=now.getFullYear();
 
-    const month =
-        String(
-            now.getMonth()+1
-        ).padStart(2,"0");
+const month=String(now.getMonth()+1).padStart(2,"0");
 
-    const day =
-        String(
-            now.getDate()
-        ).padStart(2,"0");
+const day=String(now.getDate()).padStart(2,"0");
 
-    const random =
-        Math.floor(
-            1000 +
-            Math.random()*9000
-        );
+const random=Math.floor(1000+Math.random()*9000);
 
-    return `CF-${year}${month}${day}-${random}`;
+return `CF-${year}${month}${day}-${random}`;
 
 }
-
-
-
-/* FECHA */
 
 function getDate(){
 
-    return new Date()
-        .toLocaleDateString(
-            "es-MX",
-            {
-                day:"2-digit",
-                month:"2-digit",
-                year:"numeric"
-            }
-        );
+return new Date().toLocaleDateString("es-MX",{
+day:"2-digit",
+month:"2-digit",
+year:"numeric"
+});
 
 }
-
-
-
-/* HTML SEGURO */
 
 function escapeHTML(text){
 
-    const div =
-        document.createElement(
-            "div"
-        );
+const div=document.createElement("div");
 
-    div.textContent =
-        text;
+div.textContent=text;
 
-    return div.innerHTML;
+return div.innerHTML;
 
 }
-
-
 
 /* CALCULAR */
 
-function calculateQuote(){
+function calculateQuote(save=true,existingQuote=null){
 
-    let materials = 0;
+let materials=0;
 
-    const names =
-        document.querySelectorAll(
-            ".item-name"
-        );
+const names=document.querySelectorAll(".item-name");
+const quantities=document.querySelectorAll(".item-quantity");
+const units=document.querySelectorAll(".item-unit");
+const prices=document.querySelectorAll(".item-price");
 
-    const quantities =
-        document.querySelectorAll(
-            ".item-quantity"
-        );
+const resultItems=document.getElementById("resultItems");
 
-    const units =
-        document.querySelectorAll(
-            ".item-unit"
-        );
+resultItems.innerHTML="";
 
-    const prices =
-        document.querySelectorAll(
-            ".item-price"
-        );
+const quoteItems=[];
 
-    const resultItems =
-        document.getElementById(
-            "resultItems"
-        );
+for(let i=0;i<quantities.length;i++){
 
-    resultItems.innerHTML = "";
+const name=names[i].value.trim()||"Concepto";
 
-    const quoteItems = [];
+const quantity=Number(quantities[i].value)||0;
 
+const unit=units[i].value.trim()||"pieza";
 
+const price=Number(prices[i].value)||0;
 
-    for(
-        let i=0;
-        i<quantities.length;
-        i++
-    ){
+const amount=quantity*price;
 
-        const name =
-            names[i].value.trim() ||
-            "Concepto";
+materials+=amount;
 
-        const quantity =
-            Number(
-                quantities[i].value
-            ) || 0;
+quoteItems.push({
+name,
+quantity,
+unit,
+price,
+amount
+});
 
-        const unit =
-            units[i].value.trim() ||
-            "pieza";
+if(quantity>0 || price>0 || names[i].value.trim()){
 
-        const price =
-            Number(
-                prices[i].value
-            ) || 0;
+const row=document.createElement("tr");
 
-        const amount =
-            quantity * price;
+row.innerHTML=`
 
-        materials += amount;
+<td>${escapeHTML(name)}</td>
 
+<td>
+${quantity} ${escapeHTML(unit)}
+</td>
 
-        quoteItems.push({
+<td>${money(price)}</td>
 
-            name:name,
-            quantity:quantity,
-            unit:unit,
-            price:price,
-            amount:amount
+<td>${money(amount)}</td>
 
-        });
+`;
 
-
-        if(
-            quantity > 0 ||
-            price > 0 ||
-            names[i].value.trim()
-        ){
-
-            const row =
-                document.createElement(
-                    "tr"
-                );
-
-            row.innerHTML = `
-
-                <td>
-                    ${escapeHTML(name)}
-                </td>
-
-                <td>
-                    ${quantity}
-                    ${escapeHTML(unit)}
-                </td>
-
-                <td>
-                    ${money(price)}
-                </td>
-
-                <td>
-                    ${money(amount)}
-                </td>
-
-            `;
-
-            resultItems.appendChild(row);
-
-        }
-
-    }
-
-
-
-    const labor =
-        Number(
-            document.getElementById(
-                "labor"
-            ).value
-        ) || 0;
-
-
-
-    const discountPercent =
-        Number(
-            document.getElementById(
-                "discount"
-            ).value
-        ) || 0;
-
-
-
-    const profitPercent =
-        Number(
-            document.getElementById(
-                "profit"
-            ).value
-        ) || 0;
-
-
-
-    const deposit =
-        Number(
-            document.getElementById(
-                "deposit"
-            ).value
-        ) || 0;
-
-
-
-    const subtotal =
-        materials + labor;
-
-
-
-    const discount =
-        subtotal *
-        (discountPercent / 100);
-
-
-
-    const afterDiscount =
-        subtotal - discount;
-
-
-
-    const profit =
-        afterDiscount *
-        (profitPercent / 100);
-
-
-
-    const beforeIva =
-        afterDiscount + profit;
-
-
-
-    let iva = 0;
-
-
-
-    if(
-        document.getElementById(
-            "includeIva"
-        ).checked
-    ){
-
-        iva =
-            beforeIva * 0.16;
-
-    }
-
-
-
-    const total =
-        beforeIva + iva;
-
-
-
-    const balance =
-        Math.max(
-            total - deposit,
-            0
-        );
-
-
-
-    const businessName =
-        document.getElementById(
-            "businessName"
-        ).value.trim();
-
-
-
-    const businessPhone =
-        document.getElementById(
-            "businessPhone"
-        ).value.trim();
-
-
-
-    const businessEmail =
-        document.getElementById(
-            "businessEmail"
-        ).value.trim();
-
-
-
-    const businessAddress =
-        document.getElementById(
-            "businessAddress"
-        ).value.trim();
-
-
-
-    const clientName =
-        document.getElementById(
-            "clientName"
-        ).value.trim();
-
-
-
-    const clientPhone =
-        document.getElementById(
-            "clientPhone"
-        ).value.trim();
-
-
-
-    const clientAddress =
-        document.getElementById(
-            "clientAddress"
-        ).value.trim();
-
-
-
-    const service =
-        document.getElementById(
-            "service"
-        ).value.trim();
-
-
-
-    const validity =
-        document.getElementById(
-            "validity"
-        ).value || 15;
-
-
-
-    const notes =
-        document.getElementById(
-            "notes"
-        ).value.trim();
-
-
-
-    const folio =
-        createFolio();
-
-
-
-    document.getElementById(
-        "resultBusiness"
-    ).textContent =
-        businessName ||
-        "Mi negocio";
-
-
-
-    document.getElementById(
-        "resultPhone"
-    ).textContent =
-        businessPhone ||
-        "Sin teléfono";
-
-
-
-    document.getElementById(
-        "resultEmail"
-    ).textContent =
-        businessEmail ||
-        "Sin correo";
-
-
-
-    document.getElementById(
-        "resultBusinessAddress"
-    ).textContent =
-        businessAddress ||
-        "Sin dirección";
-
-
-
-    document.getElementById(
-        "resultClient"
-    ).textContent =
-        clientName ||
-        "Sin nombre";
-
-
-
-    document.getElementById(
-        "resultClientPhone"
-    ).textContent =
-        clientPhone ||
-        "Sin teléfono";
-
-
-
-    document.getElementById(
-        "resultClientAddress"
-    ).textContent =
-        clientAddress ||
-        "Sin dirección";
-
-
-
-    document.getElementById(
-        "resultService"
-    ).textContent =
-        service ||
-        "Sin servicio";
-
-
-
-    document.getElementById(
-        "resultFolio"
-    ).textContent =
-        folio;
-
-
-
-    document.getElementById(
-        "resultDate"
-    ).textContent =
-        getDate();
-
-
-
-    document.getElementById(
-        "resultValidity"
-    ).textContent =
-        validity +
-        " días";
-
-
-
-    document.getElementById(
-        "resultMaterials"
-    ).textContent =
-        money(materials);
-
-
-
-    document.getElementById(
-        "resultLabor"
-    ).textContent =
-        money(labor);
-
-
-
-    document.getElementById(
-        "resultDiscount"
-    ).textContent =
-        "-" + money(discount);
-
-
-
-    document.getElementById(
-        "resultProfit"
-    ).textContent =
-        money(profit);
-
-
-
-    document.getElementById(
-        "resultIva"
-    ).textContent =
-        money(iva);
-
-
-
-    document.getElementById(
-        "resultTotal"
-    ).textContent =
-        money(total);
-
-
-
-    document.getElementById(
-        "resultDeposit"
-    ).textContent =
-        money(deposit);
-
-
-
-    document.getElementById(
-        "resultBalance"
-    ).textContent =
-        money(balance);
-
-
-
-    document.getElementById(
-        "resultNotes"
-    ).textContent =
-        notes ||
-        "Sin notas.";
-
-
-
-    const resultLogo =
-        document.getElementById(
-            "resultLogo"
-        );
-
-
-
-    if(logoData){
-
-        resultLogo.src =
-            logoData;
-
-        resultLogo.style.display =
-            "block";
-
-    }else{
-
-        resultLogo.style.display =
-            "none";
-
-    }
-
-
-
-    currentQuote = {
-
-        businessName,
-        businessPhone,
-        businessEmail,
-        businessAddress,
-
-        clientName,
-        clientPhone,
-        clientAddress,
-
-        service,
-        validity,
-
-        currency:
-            document.getElementById(
-                "currency"
-            ).value,
-
-        items:quoteItems,
-
-        materials,
-        labor,
-        discountPercent,
-        discount,
-        profitPercent,
-        profit,
-        iva,
-        total,
-        deposit,
-        balance,
-
-        notes,
-        folio,
-        date:getDate(),
-
-        logo:logoData
-
-    };
-
-
-
-    saveBusinessData();
-
-    saveQuote(currentQuote);
-
-
-
-    document.getElementById(
-        "result"
-    ).style.display =
-        "block";
-
-
-
-    document.getElementById(
-        "result"
-    ).scrollIntoView({
-        behavior:"smooth"
-    });
+resultItems.appendChild(row);
 
 }
 
+}
 
+const labor=Number(document.getElementById("labor").value)||0;
 
-/* DATOS DEL NEGOCIO */
+const discountPercent=Number(document.getElementById("discount").value)||0;
+
+const profitPercent=Number(document.getElementById("profit").value)||0;
+
+const deposit=Number(document.getElementById("deposit").value)||0;
+
+const subtotal=materials+labor;
+
+const discount=subtotal*(discountPercent/100);
+
+const afterDiscount=Math.max(subtotal-discount,0);
+
+const profit=afterDiscount*(profitPercent/100);
+
+const beforeIva=afterDiscount+profit;
+
+const includeIva=document.getElementById("includeIva").checked;
+
+const iva=includeIva?beforeIva*0.16:0;
+
+const total=beforeIva+iva;
+
+const balance=Math.max(total-deposit,0);
+
+const businessName=document.getElementById("businessName").value.trim();
+
+const businessPhone=document.getElementById("businessPhone").value.trim();
+
+const businessEmail=document.getElementById("businessEmail").value.trim();
+
+const businessAddress=document.getElementById("businessAddress").value.trim();
+
+const clientName=document.getElementById("clientName").value.trim();
+
+const clientPhone=document.getElementById("clientPhone").value.trim();
+
+const clientAddress=document.getElementById("clientAddress").value.trim();
+
+const service=document.getElementById("service").value.trim();
+
+const validity=document.getElementById("validity").value||15;
+
+const notes=document.getElementById("notes").value.trim();
+
+const currency=document.getElementById("currency").value;
+
+const folio=existingQuote?.folio||createFolio();
+
+const date=existingQuote?.date||getDate();
+
+document.getElementById("resultBusiness").textContent=businessName||"Mi negocio";
+
+document.getElementById("resultPhone").textContent=businessPhone||"Sin teléfono";
+
+document.getElementById("resultEmail").textContent=businessEmail||"Sin correo";
+
+document.getElementById("resultBusinessAddress").textContent=businessAddress||"Sin dirección";
+
+document.getElementById("resultClient").textContent=clientName||"Sin nombre";
+
+document.getElementById("resultClientPhone").textContent=clientPhone||"Sin teléfono";
+
+document.getElementById("resultClientAddress").textContent=clientAddress||"Sin dirección";
+
+document.getElementById("resultService").textContent=service||"Sin servicio";
+
+document.getElementById("resultFolio").textContent=folio;
+
+document.getElementById("resultDate").textContent=date;
+
+document.getElementById("resultValidity").textContent=validity+" días";
+
+document.getElementById("resultMaterials").textContent=money(materials,currency);
+
+document.getElementById("resultLabor").textContent=money(labor,currency);
+
+document.getElementById("resultDiscount").textContent="-"+money(discount,currency);
+
+document.getElementById("resultProfit").textContent=money(profit,currency);
+
+document.getElementById("resultIva").textContent=money(iva,currency);
+
+document.getElementById("resultTotal").textContent=money(total,currency);
+
+document.getElementById("resultDeposit").textContent=money(deposit,currency);
+
+document.getElementById("resultBalance").textContent=money(balance,currency);
+
+document.getElementById("resultNotes").textContent=notes||"Sin notas.";
+
+const resultLogo=document.getElementById("resultLogo");
+
+if(logoData){
+
+resultLogo.src=logoData;
+resultLogo.style.display="block";
+
+}else{
+
+resultLogo.style.display="none";
+
+}
+
+currentQuote={
+
+businessName,
+businessPhone,
+businessEmail,
+businessAddress,
+
+clientName,
+clientPhone,
+clientAddress,
+
+service,
+validity,
+currency,
+
+items:quoteItems,
+
+materials,
+labor,
+discountPercent,
+discount,
+profitPercent,
+profit,
+includeIva,
+iva,
+total,
+deposit,
+balance,
+
+notes,
+folio,
+date,
+logo:logoData
+
+};
+
+saveBusinessData();
+
+if(save){
+saveQuote(currentQuote);
+}
+
+document.getElementById("result").style.display="block";
+
+document.getElementById("result").scrollIntoView({
+behavior:"smooth"
+});
+
+}
+
+/* NEGOCIO */
 
 function saveBusinessData(){
 
-    const data = {
+const data={
 
-        businessName:
-            document.getElementById(
-                "businessName"
-            ).value,
+businessName:document.getElementById("businessName").value,
 
-        businessPhone:
-            document.getElementById(
-                "businessPhone"
-            ).value,
+businessPhone:document.getElementById("businessPhone").value,
 
-        businessEmail:
-            document.getElementById(
-                "businessEmail"
-            ).value,
+businessEmail:document.getElementById("businessEmail").value,
 
-        businessAddress:
-            document.getElementById(
-                "businessAddress"
-            ).value,
+businessAddress:document.getElementById("businessAddress").value,
 
-        logo:logoData
+logo:logoData
 
-    };
+};
 
-
-    localStorage.setItem(
-        "cotizaBusiness",
-        JSON.stringify(data)
-    );
+localStorage.setItem(
+"cotizaBusiness",
+JSON.stringify(data)
+);
 
 }
-
-
-
-/* CARGAR DATOS */
 
 function loadBusinessData(){
 
-    const saved =
-        localStorage.getItem(
-            "cotizaBusiness"
-        );
+const saved=localStorage.getItem("cotizaBusiness");
 
-    if(!saved){
-        return;
-    }
+if(!saved)return;
 
+try{
 
-    try{
+const data=JSON.parse(saved);
 
-        const data =
-            JSON.parse(saved);
+document.getElementById("businessName").value=data.businessName||"";
 
+document.getElementById("businessPhone").value=data.businessPhone||"";
 
-        document.getElementById(
-            "businessName"
-        ).value =
-            data.businessName || "";
+document.getElementById("businessEmail").value=data.businessEmail||"";
 
+document.getElementById("businessAddress").value=data.businessAddress||"";
 
-        document.getElementById(
-            "businessPhone"
-        ).value =
-            data.businessPhone || "";
+if(data.logo){
 
+logoData=data.logo;
 
-        document.getElementById(
-            "businessEmail"
-        ).value =
-            data.businessEmail || "";
+const preview=document.getElementById("logoPreview");
 
-
-        document.getElementById(
-            "businessAddress"
-        ).value =
-            data.businessAddress || "";
-
-
-        if(data.logo){
-
-            logoData =
-                data.logo;
-
-            const preview =
-                document.getElementById(
-                    "logoPreview"
-                );
-
-            preview.src =
-                logoData;
-
-            preview.style.display =
-                "block";
-
-        }
-
-    }catch(error){
-
-        console.log(error);
-
-    }
+preview.src=logoData;
+preview.style.display="block";
 
 }
 
+}catch(error){
+console.log(error);
+}
 
+}
 
 /* HISTORIAL */
 
 function getHistory(){
 
-    try{
+try{
 
-        return JSON.parse(
-            localStorage.getItem(
-                "cotizaHistory"
-            )
-        ) || [];
+return JSON.parse(
+localStorage.getItem("cotizaHistory")
+)||[];
 
-    }catch(error){
+}catch(error){
 
-        return [];
-
-    }
+return[];
 
 }
 
-
+}
 
 function saveQuote(quote){
 
-    let history =
-        getHistory();
+let history=getHistory();
 
+history.unshift(quote);
 
-    history.unshift(quote);
-
-
-    if(history.length > 30){
-
-        history =
-            history.slice(
-                0,
-                30
-            );
-
-    }
-
-
-    localStorage.setItem(
-        "cotizaHistory",
-        JSON.stringify(history)
-    );
-
-
-    renderHistory();
-
+if(history.length>30){
+history=history.slice(0,30);
 }
 
+localStorage.setItem(
+"cotizaHistory",
+JSON.stringify(history)
+);
 
+renderHistory();
+
+}
 
 function renderHistory(){
 
-    const history =
-        getHistory();
+const history=getHistory();
 
+const card=document.getElementById("historyCard");
 
-    const card =
-        document.getElementById(
-            "historyCard"
-        );
+const list=document.getElementById("historyList");
 
+if(history.length===0){
 
-    const list =
-        document.getElementById(
-            "historyList"
-        );
-
-
-    if(history.length === 0){
-
-        card.style.display =
-            "none";
-
-        return;
-
-    }
-
-
-    card.style.display =
-        "block";
-
-
-    list.innerHTML = "";
-
-
-    history.forEach(
-        function(quote,index){
-
-            const div =
-                document.createElement(
-                    "div"
-                );
-
-            div.className =
-                "history-item";
-
-
-            div.innerHTML = `
-
-                <strong>
-                    ${escapeHTML(
-                        quote.folio
-                    )}
-                </strong>
-
-                <div>
-                    ${escapeHTML(
-                        quote.clientName ||
-                        "Sin cliente"
-                    )}
-                </div>
-
-                <div>
-                    ${escapeHTML(
-                        quote.date
-                    )}
-                </div>
-
-                <div>
-                    <strong>
-                        ${money(
-                            quote.total
-                        )}
-                    </strong>
-                </div>
-
-                <div class="history-buttons">
-
-                    <button
-                        type="button"
-                        class="primary"
-                        onclick="loadQuote(${index})"
-                    >
-                        Abrir
-                    </button>
-
-                    <button
-                        type="button"
-                        class="danger"
-                        onclick="deleteQuote(${index})"
-                    >
-                        Eliminar
-                    </button>
-
-                </div>
-
-            `;
-
-
-            list.appendChild(div);
-
-        }
-    );
+card.style.display="none";
+return;
 
 }
 
+card.style.display="block";
 
+list.innerHTML="";
+
+history.forEach(function(quote,index){
+
+const div=document.createElement("div");
+
+div.className="history-item";
+
+div.innerHTML=`
+
+<strong>
+${escapeHTML(quote.folio||"Cotización")}
+</strong>
+
+<div>
+${escapeHTML(quote.clientName||"Sin cliente")}
+</div>
+
+<div>
+${escapeHTML(quote.date||"")}
+</div>
+
+<div>
+<strong>
+${money(quote.total,quote.currency||"MXN")}
+</strong>
+</div>
+
+<div class="history-buttons">
+
+<button type="button" class="primary"
+onclick="loadQuote(${index})">
+Abrir
+</button>
+
+<button type="button" class="danger"
+onclick="deleteQuote(${index})">
+Eliminar
+</button>
+
+</div>
+
+`;
+
+list.appendChild(div);
+
+});
+
+}
 
 function loadQuote(index){
 
-    const history =
-        getHistory();
+const history=getHistory();
 
-    const quote =
-        history[index];
+const quote=history[index];
 
+if(!quote)return;
 
-    if(!quote){
-        return;
-    }
+document.getElementById("businessName").value=quote.businessName||"";
 
+document.getElementById("businessPhone").value=quote.businessPhone||"";
 
-    document.getElementById(
-        "businessName"
-    ).value =
-        quote.businessName || "";
+document.getElementById("businessEmail").value=quote.businessEmail||"";
 
+document.getElementById("businessAddress").value=quote.businessAddress||"";
 
-    document.getElementById(
-        "businessPhone"
-    ).value =
-        quote.businessPhone || "";
+document.getElementById("clientName").value=quote.clientName||"";
 
+document.getElementById("clientPhone").value=quote.clientPhone||"";
 
-    document.getElementById(
-        "businessEmail"
-    ).value =
-        quote.businessEmail || "";
+document.getElementById("clientAddress").value=quote.clientAddress||"";
 
+document.getElementById("service").value=quote.service||"";
 
-    document.getElementById(
-        "businessAddress"
-    ).value =
-        quote.businessAddress || "";
+document.getElementById("validity").value=quote.validity||15;
 
+document.getElementById("currency").value=quote.currency||"MXN";
 
-    document.getElementById(
-        "clientName"
-    ).value =
-        quote.clientName || "";
+document.getElementById("labor").value=quote.labor||0;
 
+document.getElementById("discount").value=quote.discountPercent||0;
 
-    document.getElementById(
-        "clientPhone"
-    ).value =
-        quote.clientPhone || "";
+document.getElementById("profit").value=quote.profitPercent||20;
 
+document.getElementById("deposit").value=quote.deposit||0;
 
-    document.getElementById(
-        "clientAddress"
-    ).value =
-        quote.clientAddress || "";
+document.getElementById("notes").value=quote.notes||"";
 
+document.getElementById("includeIva").checked=!!quote.includeIva;
 
-    document.getElementById(
-        "service"
-    ).value =
-        quote.service || "";
+document.getElementById("items").innerHTML="";
 
+itemNumber=0;
 
-    document.getElementById(
-        "validity"
-    ).value =
-        quote.validity || 15;
+(quote.items||[]).forEach(function(item){
 
+addItem();
 
-    document.getElementById(
-        "currency"
-    ).value =
-        quote.currency || "MXN";
+const items=document.querySelectorAll(".item");
 
+const last=items[items.length-1];
 
-    document.getElementById(
-        "labor"
-    ).value =
-        quote.labor || 0;
+last.querySelector(".item-name").value=item.name||"";
 
+last.querySelector(".item-quantity").value=item.quantity||0;
 
-    document.getElementById(
-        "discount"
-    ).value =
-        quote.discountPercent || 0;
+last.querySelector(".item-unit").value=item.unit||"pieza";
 
+last.querySelector(".item-price").value=item.price||0;
 
-    document.getElementById(
-        "profit"
-    ).value =
-        quote.profitPercent || 20;
+});
 
+logoData=quote.logo||"";
 
-    document.getElementById(
-        "deposit"
-    ).value =
-        quote.deposit || 0;
+if(logoData){
 
+document.getElementById("logoPreview").src=logoData;
 
-    document.getElementById(
-        "notes"
-    ).value =
-        quote.notes || "";
+document.getElementById("logoPreview").style.display="block";
 
+}else{
 
-    document.getElementById(
-        "items"
-    ).innerHTML = "";
-
-
-    itemNumber = 0;
-
-
-    quote.items.forEach(
-        function(item){
-
-            addItem();
-
-
-            const items =
-                document.querySelectorAll(
-                    ".item"
-                );
-
-            const last =
-                items[items.length-1];
-
-
-            last.querySelector(
-                ".item-name"
-            ).value =
-                item.name;
-
-
-            last.querySelector(
-                ".item-quantity"
-            ).value =
-                item.quantity;
-
-
-            last.querySelector(
-                ".item-unit"
-            ).value =
-                item.unit;
-
-
-            last.querySelector(
-                ".item-price"
-            ).value =
-                item.price;
-
-        }
-    );
-
-
-    logoData =
-        quote.logo || "";
-
-
-    if(logoData){
-
-        document.getElementById(
-            "logoPreview"
-        ).src =
-            logoData;
-
-        document.getElementById(
-            "logoPreview"
-        ).style.display =
-            "block";
-
-    }
-
-
-    calculateQuote();
+document.getElementById("logoPreview").style.display="none";
 
 }
 
+calculateQuote(false,quote);
 
+document.getElementById("result").scrollIntoView({
+behavior:"smooth"
+});
+
+}
 
 function deleteQuote(index){
 
-    const history =
-        getHistory();
+const history=getHistory();
 
+history.splice(index,1);
 
-    history.splice(
-        index,
-        1
-    );
+localStorage.setItem(
+"cotizaHistory",
+JSON.stringify(history)
+);
 
-
-    localStorage.setItem(
-        "cotizaHistory",
-        JSON.stringify(history)
-    );
-
-
-    renderHistory();
+renderHistory();
 
 }
-
-
 
 /* PDF */
 
 function downloadPDF(){
 
-    if(!currentQuote){
+if(!currentQuote){
 
-        alert(
-            "Primero calcula una cotización."
-        );
+alert("Primero calcula una cotización.");
 
-        return;
-
-    }
-
-
-    window.print();
+return;
 
 }
 
+window.print();
 
+}
 
-/* COPIAR RESUMEN */
+/* COMPARTIR */
 
 function shareText(){
 
-    if(!currentQuote){
+if(!currentQuote){
 
-        alert(
-            "Primero calcula una cotización."
-        );
+alert("Primero calcula una cotización.");
 
-        return;
+return;
 
-    }
+}
 
+const q=currentQuote;
 
-    const q =
-        currentQuote;
-
-
-    const text =
+const text=
 
 `COTIZACIÓN
 Folio: ${q.folio}
@@ -2456,60 +1467,41 @@ Teléfono: ${q.businessPhone}
 Cliente: ${q.clientName}
 Servicio: ${q.service}
 
-TOTAL: ${money(q.total)}
+TOTAL: ${money(q.total,q.currency)}
 
-Anticipo: ${money(q.deposit)}
-Saldo pendiente: ${money(q.balance)}
+Anticipo: ${money(q.deposit,q.currency)}
+Saldo pendiente: ${money(q.balance,q.currency)}
 
 Gracias por su preferencia.`;
 
+if(navigator.share){
 
-    if(
-        navigator.share
-    ){
+navigator.share({
+title:"Cotización "+q.folio,
+text:text
+}).catch(function(){});
 
-        navigator.share({
-            title:"Cotización",
-            text:text
-        }).catch(
-            function(){}
-        );
+}else if(navigator.clipboard){
 
-    }else if(
-        navigator.clipboard
-    ){
+navigator.clipboard.writeText(text).then(function(){
 
-        navigator.clipboard
-            .writeText(text)
-            .then(
-                function(){
+alert("Resumen copiado.");
 
-                    alert(
-                        "Resumen copiado."
-                    );
+});
 
-                }
-            );
+}else{
 
-    }else{
-
-        alert(text);
-
-    }
+alert(text);
 
 }
 
-
+}
 
 /* NUEVA */
 
 function newQuote(){
-
-    location.reload();
-
+location.reload();
 }
-
-
 
 /* INICIO */
 
@@ -2517,10 +1509,7 @@ loadBusinessData();
 
 renderHistory();
 
-
 </script>
 
 </body>
 </html>
-
- 
