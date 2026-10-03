@@ -13,13 +13,13 @@ content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
 <meta name="theme-color" content="#071a33">
 
-<title>Cotiza Fácil | Generador de cotizaciones profesionales gratis</title>
+<title>Cotizador Gratis Online | Crea Cotizaciones Profesionales en PDF | Cotiza Fácil</title>
 
 <meta name="description"
-content="Crea cotizaciones profesionales gratis desde tu celular o computadora. Agrega productos, materiales, mano de obra, descuentos, ganancia, IVA y anticipos. Usa tu logo con una prueba gratis.">
+content="Crea cotizaciones profesionales gratis desde tu celular o computadora. Calcula materiales, mano de obra, descuentos, ganancia e IVA y genera tu cotización en PDF con Cotiza Fácil.">
 
 <meta name="keywords"
-content="cotizador gratis, cotización profesional, generar cotizaciones, cotizaciones PDF, cotizador online, cotizaciones para negocios, cotizar servicios, cotizador México, generador de cotizaciones">
+content="cotizador gratis, cotizador online, generador de cotizaciones, crear cotización, cotización profesional, cotizaciones en PDF, hacer cotizaciones, cotizador para negocios, cotizador de servicios, cotizador México, generar cotizaciones gratis">
 
 <meta name="author" content="Cotiza Fácil">
 
@@ -32,10 +32,10 @@ href="https://cberroteran400-spec.github.io/cotiza-facil/">
 <meta property="og:type" content="website">
 
 <meta property="og:title"
-content="Cotiza Fácil | Generador de cotizaciones profesionales">
+content="Cotizador Gratis Online | Cotiza Fácil">
 
 <meta property="og:description"
-content="Crea cotizaciones profesionales desde tu celular. Calcula automáticamente precios, IVA, ganancia y anticipos.">
+content="Crea cotizaciones profesionales gratis, calcula precios, IVA, descuentos y ganancia y genera un PDF para tu cliente.">
 
 <meta property="og:url"
 content="https://cberroteran400-spec.github.io/cotiza-facil/">
@@ -48,36 +48,54 @@ content="Cotiza Fácil">
 <meta property="og:image"
 content="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80">
 
+<meta property="og:image:alt"
+content="Cotiza Fácil, cotizador online para crear cotizaciones profesionales">
+
 <meta name="twitter:card"
 content="summary_large_image">
 
 <meta name="twitter:title"
-content="Cotiza Fácil | Cotizaciones profesionales">
+content="Cotiza Fácil | Cotizador gratis online">
 
 <meta name="twitter:description"
-content="Genera cotizaciones profesionales gratis desde cualquier dispositivo.">
+content="Genera cotizaciones profesionales gratis desde cualquier dispositivo y crea un PDF para tu cliente.">
 
 <meta name="twitter:image"
 content="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80">
 
 
 <!-- LIBRERÍA PARA GENERAR PDF REAL -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
+
+<!-- DATOS ESTRUCTURADOS -->
 
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
-  "@type":"SoftwareApplication",
+  "@type":"WebApplication",
   "name":"Cotiza Fácil",
+  "url":"https://cberroteran400-spec.github.io/cotiza-facil/",
   "applicationCategory":"BusinessApplication",
   "operatingSystem":"Web",
+  "browserRequirements":"Requiere un navegador web moderno",
   "offers":{
     "@type":"Offer",
     "price":"0",
     "priceCurrency":"USD"
   },
-  "description":"Generador de cotizaciones profesionales para negocios y trabajadores independientes."
+  "description":"Cotizador gratis online para crear cotizaciones profesionales, calcular materiales, mano de obra, descuentos, ganancia e IVA y generar cotizaciones en PDF."
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"Cotiza Fácil",
+  "url":"https://cberroteran400-spec.github.io/cotiza-facil/"
 }
 </script>
 
@@ -180,7 +198,7 @@ margin:auto;
 }
 
 .hero-content{
-max-width:760px;
+max-width:800px;
 }
 
 .badge{
@@ -211,7 +229,7 @@ color:#43d9ff;
 .hero p{
 font-size:18px;
 color:#d9e7f4;
-max-width:690px;
+max-width:720px;
 margin-bottom:28px;
 }
 
@@ -854,18 +872,61 @@ padding:0 20px;
 background:white;
 border:1px solid #e4ebf2;
 border-radius:20px;
-padding:30px;
+padding:32px;
 }
 
 .seo-card h2{
 color:#0a2748;
-font-size:25px;
-margin-bottom:13px;
+font-size:28px;
+line-height:1.2;
+margin-bottom:16px;
+}
+
+.seo-card h3{
+color:#0b2949;
+font-size:21px;
+margin-top:28px;
+margin-bottom:9px;
+}
+
+.seo-card h4{
+color:#102f50;
+font-size:17px;
+margin-top:20px;
+margin-bottom:6px;
 }
 
 .seo-card p{
 color:#5f6e80;
-margin-bottom:12px;
+margin-bottom:13px;
+}
+
+.seo-card ul{
+padding-left:22px;
+margin:10px 0 18px;
+color:#5f6e80;
+}
+
+.seo-card li{
+margin-bottom:7px;
+}
+
+.seo-intro{
+font-size:16px;
+}
+
+.seo-highlight{
+background:#f1faff;
+border-left:4px solid #43d9ff;
+padding:16px 18px;
+border-radius:10px;
+margin:20px 0;
+}
+
+.faq{
+border-top:1px solid #e4ebf2;
+margin-top:28px;
+padding-top:8px;
 }
 
 
@@ -1164,6 +1225,18 @@ width:100%;
 flex:1;
 }
 
+.seo-card{
+padding:22px 18px;
+}
+
+.seo-card h2{
+font-size:24px;
+}
+
+.seo-card h3{
+font-size:19px;
+}
+
 }
 
 </style>
@@ -1200,16 +1273,16 @@ onclick="startQuote()">
 <div class="hero-content">
 
 <div class="badge">
-⚡ Rápido · Profesional · Fácil
+⚡ Rápido · Profesional · Gratis
 </div>
 
 <h1>
-Cotiza como un <span>profesional.</span>
+Crea <span>cotizaciones profesionales</span> gratis
 </h1>
 
 <p>
-Crea cotizaciones profesionales desde tu celular o computadora.
-Calcula automáticamente tus precios, agrega tu logo y entrega el resultado a tus clientes.
+Crea cotizaciones profesionales gratis desde tu celular o computadora.
+Agrega productos, materiales, servicios y mano de obra, calcula automáticamente descuentos, ganancia e IVA y genera un PDF listo para entregar a tu cliente.
 </p>
 
 <div class="hero-buttons">
@@ -1251,7 +1324,7 @@ Cotización profesional
 </h3>
 
 <p>
-Crea una cotización completa con tus datos, los de tu cliente, productos, servicio y tu propio logo.
+Crea una cotización completa con tus datos, los de tu cliente, productos, servicios, precios y tu propio logo.
 </p>
 
 <span class="quick-link">
@@ -1274,7 +1347,7 @@ Cálculos automáticos
 </h3>
 
 <p>
-Calcula materiales, mano de obra, descuentos, ganancia, IVA, anticipo y saldo automáticamente.
+Calcula materiales, mano de obra, descuentos, ganancia, IVA, anticipo y saldo pendiente automáticamente.
 </p>
 
 <span class="quick-link">
@@ -1293,11 +1366,11 @@ onclick="goToPDF()">
 </div>
 
 <h3>
-PDF para tu cliente
+Cotizaciones en PDF
 </h3>
 
 <p>
-Genera un archivo PDF real de tu cotización y guárdalo en tu dispositivo.
+Genera un archivo PDF real de tu cotización y guárdalo en tu dispositivo para enviarlo a tu cliente.
 </p>
 
 <span class="quick-link">
@@ -1358,11 +1431,11 @@ id="quoteApp">
 <div class="app-head">
 
 <h2>
-Crear una cotización
+Cotizador gratis: crea una cotización
 </h2>
 
 <p>
-Completa los datos y deja que Cotiza Fácil haga los cálculos.
+Completa los datos y deja que Cotiza Fácil haga los cálculos automáticamente.
 </p>
 
 </div>
@@ -1406,7 +1479,7 @@ Datos de tu negocio
 </div>
 
 <div class="section-description">
-Estos datos aparecerán en la cotización.
+Estos datos aparecerán en tu cotización profesional.
 </div>
 
 
@@ -1603,11 +1676,11 @@ Continuar →
 <div class="step-content" id="step3">
 
 <div class="section-title">
-Productos y conceptos
+Productos, materiales y conceptos
 </div>
 
 <div class="section-description">
-Agrega todos los materiales, productos o servicios.
+Agrega todos los materiales, productos o servicios que quieras incluir en tu cotización.
 </div>
 
 
@@ -1684,7 +1757,7 @@ Precios y condiciones
 </div>
 
 <div class="section-description">
-Configura los valores de tu cotización.
+Configura los valores, descuentos, ganancia, IVA y condiciones de tu cotización.
 </div>
 
 
@@ -1846,11 +1919,11 @@ Revisar cotización →
 <div class="step-content" id="step5">
 
 <div class="section-title">
-Revisar y generar
+Revisar y generar tu cotización
 </div>
 
 <div class="section-description">
-Todo está listo para generar tu cotización.
+Revisa tus datos y genera una cotización profesional en PDF.
 </div>
 
 
@@ -1862,8 +1935,7 @@ padding:15px;
 border-radius:12px;
 margin-bottom:20px;
 font-size:13px;
-color:#526176;
-">
+color:#526176;">
 </div>
 
 
@@ -2092,7 +2164,7 @@ style="display:none">
 <button
 class="action-btn action-pdf"
 onclick="downloadPDF()">
-📄 PDF
+📄 Descargar PDF
 </button>
 
 <button
@@ -2143,29 +2215,189 @@ id="historyList">
 
 
 
+<!-- CONTENIDO SEO -->
+
 <section class="seo">
 
 <div class="seo-card">
 
 <h2>
-Genera cotizaciones profesionales fácilmente
+Cotizador gratis online para crear cotizaciones profesionales
 </h2>
 
-<p>
-Cotiza Fácil es una herramienta online para crear cotizaciones profesionales de productos y servicios desde cualquier dispositivo.
+<p class="seo-intro">
+Cotiza Fácil es un cotizador online que te permite crear cotizaciones profesionales desde tu celular, tablet o computadora. Puedes utilizarlo para preparar presupuestos de productos, materiales, servicios y trabajos para tus clientes.
 </p>
 
 <p>
-Agrega materiales, productos, mano de obra, descuentos, porcentaje de ganancia, IVA y anticipos. El sistema calcula automáticamente los importes y el saldo pendiente.
+En lugar de hacer los cálculos manualmente, puedes agregar conceptos, cantidades y precios para obtener automáticamente los importes de tu cotización. También puedes incluir mano de obra, descuentos, porcentaje de ganancia, IVA, anticipos y saldo pendiente.
+</p>
+
+<div class="seo-highlight">
+<strong>Haz tu cotización directamente desde tu navegador:</strong>
+no necesitas instalar un programa para comenzar a crear una cotización.
+</div>
+
+
+<h3>
+¿Cómo hacer una cotización?
+</h3>
+
+<p>
+Para hacer una cotización profesional, primero agrega los datos de tu negocio y después los datos del cliente. Luego incorpora los productos, materiales, servicios o trabajos que vas a ofrecer y establece sus cantidades y precios.
 </p>
 
 <p>
-Puedes agregar el logo de tu negocio. La primera cotización con logo puede utilizarse como prueba gratuita. Para continuar utilizando tu logo de manera ilimitada, podrás activar Cotiza Fácil Pro.
+En los siguientes pasos puedes agregar mano de obra, descuentos, ganancia, IVA, anticipos y condiciones de la propuesta. Finalmente puedes revisar el resultado y generar tu cotización.
+</p>
+
+
+<h3>
+Genera cotizaciones en PDF
+</h3>
+
+<p>
+Una cotización debe ser clara y fácil de entregar al cliente. Con Cotiza Fácil puedes generar un archivo PDF real con los datos del negocio, información del cliente, conceptos, precios, totales, anticipo, saldo y notas.
 </p>
 
 <p>
-Cuando termines, genera un archivo PDF real de tu cotización o compártela desde tu dispositivo.
+El PDF puede guardarse en tu dispositivo para posteriormente compartirlo con tu cliente utilizando las opciones disponibles en tu teléfono o computadora.
 </p>
+
+
+<h3>
+Cotizador para negocios y trabajadores independientes
+</h3>
+
+<p>
+Un cotizador puede ser útil para pequeños negocios, trabajadores independientes, prestadores de servicios, profesionales, técnicos, contratistas y personas que necesitan preparar presupuestos para sus clientes.
+</p>
+
+<p>
+Puedes utilizar Cotiza Fácil para diferentes tipos de trabajos y servicios, desde materiales y productos hasta mano de obra y proyectos completos.
+</p>
+
+
+<h3>
+¿Qué puedes incluir en una cotización?
+</h3>
+
+<ul>
+
+<li>Productos y materiales.</li>
+
+<li>Cantidades y unidades.</li>
+
+<li>Precios individuales.</li>
+
+<li>Servicios y conceptos de trabajo.</li>
+
+<li>Mano de obra.</li>
+
+<li>Descuentos.</li>
+
+<li>Porcentaje de ganancia.</li>
+
+<li>IVA del 16%.</li>
+
+<li>Anticipos.</li>
+
+<li>Saldo pendiente.</li>
+
+<li>Vigencia de la cotización.</li>
+
+<li>Notas y condiciones para el cliente.</li>
+
+<li>Datos de contacto de tu negocio.</li>
+
+<li>Logo de tu negocio mediante la función disponible.</li>
+
+</ul>
+
+
+<h3>
+¿Por qué utilizar un cotizador online?
+</h3>
+
+<p>
+Un cotizador online permite preparar una cotización desde distintos dispositivos sin depender de una hoja de cálculo o de cálculos manuales. Esto puede ayudarte a organizar los conceptos de un presupuesto y presentar la información de una manera más clara.
+</p>
+
+<p>
+Cotiza Fácil está diseñado para que el proceso sea sencillo: introduces los datos, agregas tus conceptos, configuras los precios y revisas el resultado antes de generar el PDF.
+</p>
+
+
+<div class="faq">
+
+<h3>
+Preguntas frecuentes sobre cotizaciones
+</h3>
+
+
+<h4>
+¿Cotiza Fácil es gratis?
+</h4>
+
+<p>
+Sí. Puedes utilizar el generador de cotizaciones para crear cotizaciones sin costo. Algunas funciones relacionadas con el uso del logo pueden estar disponibles mediante la prueba gratuita y posteriormente mediante Cotiza Fácil Pro.
+</p>
+
+
+<h4>
+¿Puedo hacer una cotización desde mi celular?
+</h4>
+
+<p>
+Sí. Cotiza Fácil está diseñado para funcionar desde un navegador web en teléfonos, tablets y computadoras.
+</p>
+
+
+<h4>
+¿Puedo agregar IVA a mi cotización?
+</h4>
+
+<p>
+Sí. El generador incluye una opción para incorporar IVA del 16% al cálculo de la cotización.
+</p>
+
+
+<h4>
+¿Puedo generar una cotización en PDF?
+</h4>
+
+<p>
+Sí. Después de completar y revisar tu cotización puedes utilizar el botón de PDF para generar un archivo PDF real y guardarlo en tu dispositivo.
+</p>
+
+
+<h4>
+¿Puedo agregar materiales y mano de obra?
+</h4>
+
+<p>
+Sí. Puedes agregar diferentes conceptos, cantidades y precios y también establecer un importe independiente para la mano de obra.
+</p>
+
+
+<h4>
+¿Puedo agregar un descuento y calcular mi ganancia?
+</h4>
+
+<p>
+Sí. Puedes establecer un descuento y un porcentaje de ganancia. El sistema realiza los cálculos correspondientes antes de mostrar el total.
+</p>
+
+
+<h4>
+¿Puedo guardar mis cotizaciones?
+</h4>
+
+<p>
+Sí. Cotiza Fácil incluye un historial local para consultar las cotizaciones que hayas generado desde el mismo dispositivo y navegador.
+</p>
+
+</div>
 
 </div>
 
@@ -2179,7 +2411,7 @@ Cuando termines, genera un archivo PDF real de tu cotización o compártela desd
 
 <br>
 
-Generador de cotizaciones profesionales.
+Cotizador gratis y generador de cotizaciones profesionales.
 
 <br><br>
 
@@ -4182,15 +4414,6 @@ doc.setFont(
 );
 
 doc.setFontSize(9);
-
-
-const colX = [
-15,
-82,
-105,
-130,
-160
-];
 
 
 doc.rect(
